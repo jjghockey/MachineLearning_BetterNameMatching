@@ -2,7 +2,7 @@ This folder contains the R code used to develop the training and testing data fo
 
 001_mk_data.r - This code uses proprietary data (not provided) to develop the source data for the models.
 
-002_mk_ml_data.r - This code uses the proprietary data (not provided) created in 001 to develop name comparisons that the model will compare
+002_mk_ml_data.r - This code uses the proprietary data (not provided) created in 001 to develop name comparisons that the model will compare.  This file creates 002_mk_data_rvw.csv (not provided) which is a random sample of the original name comparison data.  This data is hand labeled with Match / No Match labels.  The reviewed data is then captured by 003 for feature generation. 
 
 003_mk_mk_data_features.r - This code adds string distance features onto the data.
   name_stringdist.r - Function to automate and standardize the string distance features created

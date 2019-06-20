@@ -11,6 +11,7 @@ C. 003_mk_mk_data_features.r - This code adds string distance features onto the 
 D. 004_ml_model.r - This code creates the training and test sets.  Sets up the hyper parameters and grid search options and conducts the machine learning model using h2o. This code also prepares the ensemble Super Learning and conducts the final performance predicting and scoring on the test set.  
 
   Models employed: 
+  
     1. Binomial (GLM)
     
     2. Random Forest 

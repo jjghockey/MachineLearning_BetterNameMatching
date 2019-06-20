@@ -10,5 +10,15 @@ This folder contains the R code used to develop the training and testing data fo
 
 004_ml_model.r - This code creates the training and test sets.  Sets up the hyper parameters and grid search options and conducts the machine learning model using h2o. This code also prepares the ensemble Super Learning and conducts the final performance predicting and scoring on the test set.  
 
+  Models employed: 
+    1. Binomial (GLM)
+    2. Random Forest 
+    3. Distributed Random Forest
+    4. Gradient Boosted Machines
+    5. Deep Learning 
+    
+  See code (004) for hyper tuning parameter selection. 
+    
+
   
   

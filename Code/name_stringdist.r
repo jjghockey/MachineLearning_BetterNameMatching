@@ -6,12 +6,12 @@
 #Input 			:	dataset 
 #Output			:	dataset with string distance metrics 
 #External		:	
-#Example Syntax	: 	ank_name_stringdist(dta=c("dta"), string1=c("first_name"), string2=c("first_name_alt"), sd_options=c("osa", "lv", "dl", "lcs", "qgram", "cosine", "jaccard", "jw", "soundex"))
+#Example Syntax	: 	name_stringdist(dta=c("dta"), string1=c("first_name"), string2=c("first_name_alt"), sd_options=c("osa", "lv", "dl", "lcs", "qgram", "cosine", "jaccard", "jw", "soundex"))
 
 #Notes			:   soundex option DOES NOT use stringdist soundex().  It uses the sqldf() implementation of soundex
 #Packages		: 	stringdist, tidyverse, data.table, dtplyr, stringr, purrr, sqldf
  
-ank_name_stringdist<-function(dta=c()
+name_stringdist<-function(dta=c()
 							, string1=c(), string2=c()
 							, sd_options=c("osa", "lv", "dl", "lcs", "qgram", "cosine", "jaccard", "jw", "soundex")) {
 

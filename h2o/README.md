@@ -1,0 +1,2 @@
+- h2o model pathway files.  
+- All files should be stored in C:/h2o/namematch/

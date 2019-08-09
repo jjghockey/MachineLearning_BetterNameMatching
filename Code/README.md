@@ -23,6 +23,8 @@ D. 004_ml_model.r - This code creates the training and test sets.  Sets up the h
     5. Deep Learning 
     
   See code (004) for hyper tuning parameter selection. 
+  
+  E. name_match.r - Functionalization of the h2o models. This function takes a list of names and determines a match probability (based on the selected model)  
     
 
   

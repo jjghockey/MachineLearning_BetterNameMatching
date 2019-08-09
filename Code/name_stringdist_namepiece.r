@@ -6,7 +6,7 @@
 #Input 			:	dataset 
 #Output			:	dataset with string distance metrics 
 #External		:	
-#Example Syntax	: 	ank_name_stringdist_namepiece("dta", "name1", "name2" , group_name = "f1_l2")
+#Example Syntax	: 	name_stringdist_namepiece("dta", "name1", "name2" , group_name = "f1_l2")
 
 #Notes			:   combo = data.frame(), col1 = string1, col2 = string2, group_name = new column names for matching algorithm
 #Packages		: 	stringdist, tidyverse, data.table, dtplyr, stringr, purrr, sqldf
@@ -35,7 +35,7 @@ f_initial_match <- function(w1, w2){
   min_len<3 & (str_sub(w1,1,min_len) == str_sub(w2,1,min_len))
 }
 
-ank_name_stringdist_namepiece <- function(dta=c(), string1=c(), string2=c(), group_name=c()){
+name_stringdist_namepiece <- function(dta=c(), string1=c(), string2=c(), group_name=c()){
 	require(stringdist)
 	require(tidyverse)
 

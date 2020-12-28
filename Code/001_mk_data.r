@@ -86,7 +86,7 @@ date_vars_mcr <- names(mcr)[str_detect(names(mcr), "first_seen|last_seen")]
     mcr[[i]] <- as.Date(mcr[[i]], format="%m/%d/%Y")
   }
 
-#C. TransUnion - Transform to Long
+#C. TU - Transform to Long
 addr <- unique(str_replace_all(str_replace_all(str_replace_all(names(tu),"subject[0-9]_",""),"address[0-9]_",""),"address[0-9][0-9]_",""))
 names <- addr[str_detect(addr,"name_")]
 addr <- addr[!addr %in% c(names,"phonenumber")]
@@ -138,7 +138,7 @@ distinct()
 
 tu_l <- no_na(tu_l, c(addr))
 
-# B. MicroBilt Transform to Long
+# B. MB Transform to Long
 x <- names(mcr)[17:40]
 nm_mcr <- c("status_detail", "phone_type", "listing_type", "use_type", "carrier_name", "first_seen", "last_seen", "times_seen", 
             "alert_code1", "alert_message1", "alert_code2", "alert_message2", "alert_code3", "alert_message3", "first_name", 

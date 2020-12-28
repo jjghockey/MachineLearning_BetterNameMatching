@@ -33,7 +33,6 @@ source("./name_stringdist.r")
 source("./name_stringdist_namepiece.r")
 
 # II. Load Data -----------------------------------------------------------
-#rvw<-fread("//wdc1islfls02/CHI1FLS02_TSP/LosAngeles/Admin/001_Users/axa/002_ml_data_rvw.csv", na.strings=c("", NULL, NA))
 rvw<-fread("./002_ml_data_rvw.csv", na.strings=c("", NULL, NA))
 rvw<-rvw[is.na(category)==FALSE, ]  #Drop unlabeled values
 
